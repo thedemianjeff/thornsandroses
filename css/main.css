@@ -2,7 +2,7 @@
 
 body {
   text-align: center;
-  position: relative;
+  background: url(../media/bg.png);
 }
 
 
@@ -14,56 +14,55 @@ body {
 .btn2 {
   margin: 4% 3% 5% 0;
   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
 }
 
 /* Intro Section */
 
-#background-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-@media (max-width: 750px) {
-    #background-video { display: none; }
-    #intro-section {
-      background: url("media/cover-art.jpeg") no-repeat;
-      background-size: cover;
-    }
-}
 
 
-.navbar-brand {
+.brand {
     font-family: 'Wallpoet', cursive;
     font-size: 2rem;
     color: white;
+    text-align: left;
 }
 
-.bt1, .btn2{
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-
+.tracklist{
+  width: 35rem;
+  height: 35rem;
+  padding-bottom: 5rem;
 }
 
-p, .btn1, .btn2 {
-  animation-duration: 3s;
-  animation-name: slidein;
+
+.text1{
+  padding-top: 6rem;
+  font-family: 'Zen Dots', cursive;
+  font-size: 5rem;
+  color: white;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
+@media (max-width: 750px) {
+
+  .text1{
+    font-size: 3rem;
   }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
+  .brand{
+    text-align: center;
   }
+
+  .tracklist{
+    width: 20rem;
+    height: 20rem;
+    padding-bottom: 0;
+  }
+}
+
+footer{
+  color: white;
+}
+
+.track-btn{
+
 }
